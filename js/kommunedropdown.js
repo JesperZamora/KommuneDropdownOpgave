@@ -95,7 +95,7 @@ function isNameInList(kommuneName) {
     const kommuneNames = urlList.querySelectorAll('a');
 
     kommuneNames.forEach(komName => {
-        if(komName.textContent === kommuneName) {
+        if(komName.textContent.toLowerCase() === kommuneName.toLowerCase()) {
             nameAlreadyInList = true;
         }
     });
